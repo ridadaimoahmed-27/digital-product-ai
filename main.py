@@ -43,3 +43,16 @@ if st.button("إبدأ التوليد ✨"):
 
 st.info("نصيحة: الصور التي تولدها يمكنك بيعها يدوياً على فيسبوك أو منصات التصميم.")
 
+import streamlit as st
+import requests
+import os
+from dotenv import load_dotenv
+
+# تحميل البيانات من ملف .env
+load_dotenv()
+
+# سحب المفاتيح من الملف
+API_KEY = os.getenv("DALL_E_API_KEY")
+GUMROAD_KEY = os.getenv("GUMROAD_API_KEY")
+
+# تكملة الكود...
